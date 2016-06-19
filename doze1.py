@@ -1,5 +1,6 @@
 from datetime import datetime
 from datetime import date
+from __future__ import division
 
 
 blank_day=[0]*24
