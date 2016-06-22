@@ -27,6 +27,15 @@ while True:
     avg_mon = map(lambda x: float(x)/count_mon, sum_mon)
     print 'Average monday',avg_mon
 
+ 
+ 
+    list2=avg_mon + avg_mon[0:6]
+    x=[list2[i:i+7] for i in xrange(0,len(list2), 1)]
+    for sublist in x:
+        if len(sublist)==7:
+            print sublist
+    
+    
     die=raw_input('enter no')
     death=int(die)
     if(death==2):
