@@ -36,7 +36,10 @@ while True:
         y=sublist
         count+=1
         z[count]=y
-print z
+    print z
+
+    a=z[1:2]+z[17:24]
+    print 'List a is',a
     
     
     die=raw_input('enter no')
