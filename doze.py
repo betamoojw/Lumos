@@ -33,7 +33,10 @@ while True:
     x=[list2[i:i+7] for i in xrange(0,len(list2), 1)]
     for sublist in x:
         if len(sublist)==7:
-            print sublist
+        y=sublist
+        count+=1
+        z[count]=y
+print z
     
     
     die=raw_input('enter no')
