@@ -38,7 +38,7 @@ while True:
         z[count]=y
     print z
 
-    b=z[1:2]+z[17:24]
+    b=z[17:24]+z[1:2]
     print '5pm to 7am',b
     avg_num=[]
     for c in b:
