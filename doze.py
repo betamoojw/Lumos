@@ -38,8 +38,12 @@ while True:
         z[count]=y
     print z
 
-    a=z[1:2]+z[17:24]
-    print 'List a is',a
+    b=z[1:2]+z[17:24]
+    print '5pm to 7am',b
+    avg_num=[]
+    for c in b:
+        avg_num+=[sum(c[0:])/len(c[0:])]
+    print avg_num   
     
     
     die=raw_input('enter no')
