@@ -4,17 +4,17 @@ from operator import add
 
 
 
+
 blank_day=[0]*24
 avg_mon=[0]*24
-
 curr_mon=[0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1]
-
-
+z=[0]*50
 
 count_mon=0
 sum_mon=[0]*24
-z=[0]*25
 count=0
+
+
 
 while True:
     curr_mon=raw_input('Enter dat list son')
@@ -27,16 +27,18 @@ while True:
     avg_mon = map(lambda x: float(x)/count_mon, sum_mon)
     print 'Average monday',avg_mon
 
- 
+
  
     list2=avg_mon + avg_mon[0:6]
+    print 'list2',list2
     x=[list2[i:i+7] for i in xrange(0,len(list2), 1)]
+    print x
     for sublist in x:
         if len(sublist)==7:
-        y=sublist
-        count+=1
-        z[count]=y
-    print z
+            y=sublist
+            count+=1
+            z[count]=y
+            print z
 
     b=z[17:24]+z[1:2]
     print '5pm to 7am',b
