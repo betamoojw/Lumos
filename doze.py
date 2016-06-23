@@ -43,8 +43,11 @@ while True:
     avg_num=[]
     for c in b:
         avg_num+=[sum(c[0:])/len(c[0:])]
-    print avg_num   
+    print 'Average of each 7hour time period', avg_num   
     
+    max_value = max(avg_num)
+    max_index = avg_num.index(max_value)
+    print 'Max used 7hour time period', max_index
     
     die=raw_input('enter no')
     death=int(die)
