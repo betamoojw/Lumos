@@ -13,8 +13,8 @@ curr_mon=[0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1]
 
 count_mon=0
 sum_mon=[0]*24
-
-
+z=[0]*25
+count=0
 
 while True:
     curr_mon=raw_input('Enter dat list son')
