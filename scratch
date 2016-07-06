@@ -1,0 +1,30 @@
+data
+    weeks  <- huge unending array of 7 element lists 
+        [       ] week 1
+        [       ] week 2
+        [       ] week 3
+        [       ] week 4
+        [       ] week 5
+        [       ] week 6
+        [       ] week 7
+         and so on....1
+       
+         week 1 is a 7 element array
+            { [], [], [] , [], [], [] ,[] }  
+
+            each element is a 24 element list , each element is a boolean, true or false
+
+data
+    year
+        month
+            date(number), day(eg: monday, wed ... as numbers)
+database = []
+current_datetime = datetime.now()
+temp_year_tuple = (current_datetime.year, [])
+database.append(year_array)        # add the current year
+temp_month_tuple = (current_datetime.month, [])
+database[-1].append(temp_month_tuple)  # add current month
+temp_day_tuple = (current_datetime.day, [])
+database[-1][-1].append(temp_day_tuple)    # add current day
+
+
