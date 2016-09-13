@@ -1,6 +1,7 @@
 from datetime import datetime
 from datetime import date
 from operator import add
+from operator import itemgetter  #Used for calculating index of Maximum Period of Day
 
 blank_mon=[0]*24
 sum_mon=blank_mon
@@ -24,7 +25,7 @@ print "ending_week:",ending_week
 #Current week of the Year
 current_week= datetime.now().isocalendar()[1]
 print "current_week:",current_week
-for x in range(0,10,1):
+for x in range(0,2,1):
     curr_mon=raw_input("Enter the day Bitch")
     curr_mon=eval(curr_mon)
     count_mon=count_mon+1
@@ -52,3 +53,7 @@ for x in range(0,10,1):
 
     max_mon=max(avg_mon)
     print "Maximum Monday",max_mon
+
+
+    best_index=max(enumerate(avg_mon), key=itemgetter(1))[0]
+    print best_index
