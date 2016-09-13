@@ -20,7 +20,7 @@ while True:
  starting_week= datetime.now().isocalendar()[1]
  print starting_week
  break
- 
+
 #Ending week is the last week of Initial Learning Phase.
 ending_week= starting_week + 2
 print ending_week
@@ -30,10 +30,10 @@ current_week= datetime.now().isocalendar()[1]
 
 #Operations carried out during Intital Learning Phase
 while current_week<ending_week:
- 
-    if(datetime.now().hour==1): #Starts at 0AM in the Morning
+
+    if(datetime.now().hour==0): #Starts at 0AM in the Morning
         #Include 7 hour LED Colour Change
-  
+
     while(datetime.now().isoweekday()==1):   #Monday
         while(#sensor readings true):
             curr_mon= blank_day
@@ -58,15 +58,15 @@ while current_week<ending_week:
             max_val_mon = max(avg_num_mon)
             max_index_mon = avg_num.index(max_val_mon) #Index of the Maximum Averaged Sleeping Period Sublist. This index determines start of the Sleep Cycle Lighting schedule
             break
-        
-       
+
+
 while current_week>=ending_week:
 
     while(datetime.now().isoweekday()==1):   #Monday
-    
+
         if(datetime.now().hour)
-    
-    
+
+
         while(#sensor readings true):
             curr_mon= blank_day
             curr_mon[datetime.now().hour]=1
@@ -90,19 +90,3 @@ while current_week>=ending_week:
             max_val_mon = max(avg_num_mon)
             max_index_mon = avg_num.index(max_val_mon) #Index of the Maximum Averaged Sleeping Period Sublist. This index determines start of the Sleep Cycle Lighting schedule
             break
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
