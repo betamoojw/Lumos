@@ -15,9 +15,9 @@ print "Current Monday",curr_mon
 
 #Gets the Initial Week of the Year since Power On
 while True:
- starting_week= datetime.now().isocalendar()[1]
- print "starting_week:",starting_week
- break
+    starting_week= datetime.now().isocalendar()[1]
+    print "starting_week:",starting_week
+    break
 
 #Ending week is the last week of Initial Learning Phase.
 ending_week= starting_week + 2
