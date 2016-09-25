@@ -59,7 +59,7 @@ while current_week<ending_week:
             print "Maximum Monday",max_mon
 
 
-            best_index=max(enumerate(avg_mon), key=itemgetter(1))[0]
+            best_index=max(enumerate(avg_mon), key=itemgetter(1))[0]  #Finds the index of the Sleeping Period which is used the Maximum
             print best_index
             break
     if (current_week>=ending_week):
