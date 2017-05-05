@@ -5,16 +5,16 @@ from datetime import timedelta
 
 b=2
 z=timedelta(hours=b) + timedelta(hours=-3)
-print z
+print (z)
 s=str(z)
 y = s.split(' ')
-print y
+print (y)
 time= y[2]
-print time
+print (time)
 hour=time.split(":")
-print hour
+print (hour)
 req_hour=hour[0]
-print req_hour
+print (req_hour)
 
 
 #from test.py import best_index
