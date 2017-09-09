@@ -1,6 +1,6 @@
 # Basic .gitattributes for a python repo.
 
-/Electronics/Sleep Lamp.sch/* linguist-vendored
+/Electronics/Sleep Lamp.sch* linguist-vendored
 
 # Source files
 # ============
